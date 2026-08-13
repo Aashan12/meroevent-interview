@@ -1,90 +1,81 @@
-# MeroEvent - Frontend Interview Task
+# 📋 MeroEvent Frontend Engineering Interview
 
-## 🎯 Task Overview
-
-This is a **venue detail page** for MeroEvent, a platform for discovering and booking event venues in Nepal. The page displays detailed information about **Dusit Thani Himalayan Resort**.
-
-### Your Task
-
-You have **90 minutes** to complete the following:
-
-#### Part 1: Bug Fixes (30 minutes)
-This page has **several bugs**. Find and fix them. Bugs may include:
-- Broken images
-- Accessibility issues
-- Layout/responsive problems
-- React best practice violations
-- Hydration issues
-
-> **Tip:** Check the browser console, try resizing the viewport, and inspect the components carefully.
-
-#### Part 2: Redesign (60 minutes)
-Redesign this page to make it look **more modern, polished, and visually appealing**. You can:
-- Change the color scheme, typography, and spacing
-- Add animations and transitions
-- Improve the responsive layout
-- Redesign individual components (cards, buttons, sections)
-- Add new visual elements
-
-You are free to use any CSS approach (Tailwind utility classes, custom CSS, etc.)
+Tests debugging ability, UI/UX design taste, code architecture, and product thinking.
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Setup Instructions
 
-```bash
-# Install dependencies
-pnpm install
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Aashan12/meroevent-interview.git
+   cd meroevent-interview
+   ```
 
-# Start development server
-pnpm dev
-```
+2. **Install dependencies:**
+   ```bash
+   pnpm install
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) to see the page.
+3. **Start the development server:**
+   ```bash
+   pnpm dev
+   ```
 
----
-
-## 📁 Project Structure
-
-```
-├── app/
-│   ├── globals.css          # Global styles
-│   ├── layout.tsx           # Root layout
-│   └── page.tsx             # Main page (assembles all components)
-├── components/
-│   ├── Breadcrumb.tsx       # Navigation breadcrumb
-│   ├── NavActions.tsx       # Share, Save, Directions buttons
-│   ├── ImagePreviewGrid.tsx # Photo gallery grid
-│   ├── VenueDetailInfo.tsx  # Venue info, stats, facilities, description
-│   ├── VenueHallCard.tsx    # Individual hall card
-│   ├── VenueHallList.tsx    # Available halls section
-│   ├── MoreVenueCard.tsx    # Venue recommendation card
-│   └── MoreVenues.tsx       # More venues section
-├── data/
-│   └── venue.ts             # Hardcoded venue data & types
-└── public/
-    └── images/              # Venue & hall images
-```
+4. **Open in browser:**  
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 📝 Notes
-
-- All data is **hardcoded** in `data/venue.ts` — no API calls needed
-- Images are served from `/public/images/`
-- The project uses **Next.js App Router**, **TypeScript**, and **Tailwind CSS**
-- Icons are from **lucide-react**
+## ⏱️ Assessment Structure — Total: 90 Minutes
 
 ---
 
-## ✅ Evaluation Criteria
+### 🔍 Q1 — Bug Hunting & Fixing (20 min)
 
-| Criteria | Weight |
-|----------|--------|
-| Bug identification & fixes | 30% |
-| Visual design quality | 30% |
-| Code quality & organization | 20% |
-| Responsive design | 10% |
-| Attention to detail | 10% |
+There are several bugs and code smells intentionally planted across this page.
 
-Good luck! 🎉
+**Your tasks:**
+1. Inspect the UI, browser console, network requests, and code files.
+2. Note down every issue in a `BUGS_FOUND.md` file (or at the bottom of the README) — state what the bug is, which file/component was responsible, and how you fixed it.
+3. Fix all bugs so the page runs smoothly without console errors or broken elements.
+
+*(Hints: Check image paths, accessibility attributes, list rendering keys, responsive layout behavior, and server/client hydration).*
+
+---
+
+### 🎨 Q2 — UI/UX Redesign (30 min)
+
+If you were the lead frontend engineer & designer redesigning this venue detail page:
+
+**Your tasks:**
+1. **Apply your redesign:** Polish this page layout, typography, spacing, color accents, component styling, and micro-interactions.
+2. Ensure the page looks exceptional and responsive across both **mobile** and **desktop** viewports.
+
+---
+
+### 💡 Q3 — New Feature Concept & Prototype (40 min)
+
+Put yourself in the shoes of a customer looking to book a venue for a wedding, corporate conference, or celebration.
+
+**Your tasks:**
+1. **Feature idea:** What impactful feature would you add to help customers make booking decisions faster or customize their event with ease? *(Add as many as you want.)*  
+   *Examples: interactive date & hall availability checker, budget/per-pax cost calculator, add-on package selector, guest inquiry modal wizard, 360° virtual tour preview, messaging, etc.*
+2. **Build a prototype:** Implement a functional UI prototype of your proposed feature directly into the page.
+3. **Document:** In 2–3 sentences, explain why this feature adds value for the customer and the business.
+
+---
+
+## 📤 Submission Instructions
+
+1. **Commit your work:**
+   ```bash
+   git add .
+   git commit -m "solution: completed interview assessment by <your-name>"
+   ```
+
+2. **Push to your own repository / branch:**
+   - Push the code to your personal GitHub account (public or private repository).
+   - If using a private repository, invite **`Aashan12`** as a collaborator on GitHub (*Settings → Collaborators → Add people → `Aashan12`*).
+
+3. **Share your repository link** with the interview panel.
